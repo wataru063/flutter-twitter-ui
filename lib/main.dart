@@ -24,7 +24,21 @@ class MyApp extends StatelessWidget {
               fontSize: 16,
             )),
       ),
-      body: const TweetTile(),
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+            TweetTile(),
+          ],
+        ),
+      ),
     ));
   }
 }
